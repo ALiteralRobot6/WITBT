@@ -1,6 +1,6 @@
 let scores = {};
 let wiki = '';
-let docs = ['https://aliteralrobot6.github.io/WITBT/wiki1a.txt'];
+let docs = ['https://aliteralrobot6.github.io/WITBT/wiki1a.txt', 'https://aliteralrobot6.github.io/WITBT/wiki1b.txt', 'https://aliteralrobot6.github.io/WITBT/wiki1c.txt'];
 let article = docs[Math.floor(Math.random()) * docs.length]; //Picks a random Wiki file.
 preview();
 // Making a preview of the article.
