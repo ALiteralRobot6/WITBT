@@ -33,3 +33,15 @@ function downvote() {
     }
     console.log(scores);
 }
+let myDictionary = {
+    key1: 'value1',
+    key2: 'value2'
+};
+fetch('/receive_dictionary', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(scores)
+}).then(response => response.json())
+  .then(data => console.log(data));
