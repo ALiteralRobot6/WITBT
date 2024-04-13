@@ -2,7 +2,7 @@ let scores = {};
 let wiki = '';
 let docs = ['https://aliteralrobot6.github.io/WITBT/wiki1a.txt'];
 let article = docs[Math.floor(Math.random()) * docs.length]; //Picks a random Wiki file.
-
+preview();
 // Making a preview of the article.
 async function preview() {
     const response = await fetch(article, {mode: 'no-cors'});
@@ -15,16 +15,17 @@ async function preview() {
 
 // Upvoting and downvoting.
 function upvote() {
+    preview();
     if (!scores.hasOwnProperty(wiki)) {
         scores[wiki] = 1;
     } else {
         scores[wiki] = scores[wiki] + 1;
     }
     console.log(scores);
-    preview();
 }
 
 function downvote() {
+    preview();
     if (!scores.hasOwnProperty(wiki)) {
         scores[wiki] = -1;
     } else {
