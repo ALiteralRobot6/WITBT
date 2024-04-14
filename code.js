@@ -21,6 +21,8 @@ function upvote() {
     } else {
         scores[wiki] = scores[wiki] + 1;
     }
+    console.log(scores);
+    export wiki;
 }
 
 function downvote() {
@@ -31,8 +33,5 @@ function downvote() {
         scores[wiki] = scores[wiki] - 1;
     }
     console.log(scores);
+    export wiki;
 }
-let myDictionary = {
-    key1: 'value1',
-    key2: 'value2'
-};
