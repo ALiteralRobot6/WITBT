@@ -22,7 +22,7 @@ function upvote() {
         scores[wiki] = scores[wiki] + 1;
     }
     console.log(scores);
-    export scores;
+    //export scores;
 }
 
 function downvote() {
@@ -33,5 +33,5 @@ function downvote() {
         scores[wiki] = scores[wiki] - 1;
     }
     console.log(scores);
-    export scores;
+    //export scores;
 }
