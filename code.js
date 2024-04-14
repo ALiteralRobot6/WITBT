@@ -21,12 +21,6 @@ function upvote() {
     } else {
         scores[wiki] = scores[wiki] + 1;
     }
-    console.log(scores);
-    let dictString = JSON.stringify(scores);
-    fs.writeFile('mytextfile.txt', dictString, (err) => {
-    if (err) throw err;
-    console.log('Dictionary written to file');
-    });
 }
 
 function downvote() {
@@ -37,11 +31,6 @@ function downvote() {
         scores[wiki] = scores[wiki] - 1;
     }
     console.log(scores);
-    let dictString = JSON.stringify(scores);
-    fs.writeFile('mytextfile.txt', dictString, (err) => {
-    if (err) throw err;
-    console.log('Dictionary written to file');
-    });
 }
 let myDictionary = {
     key1: 'value1',
