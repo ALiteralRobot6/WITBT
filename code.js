@@ -1,10 +1,9 @@
-let scores = {};
-let wiki = '';
-let docs = ['https://aliteralrobot6.github.io/WITBT/wiki1a.txt', 'https://aliteralrobot6.github.io/WITBT/wiki1b.txt', 'https://aliteralrobot6.github.io/WITBT/wiki1c.txt'];
-let article = docs[Math.floor(Math.random()) * docs.length]; //Picks a random Wiki file.
-preview();
+export let scores = {};
+export let wiki = '';
+export let docs = ['https://aliteralrobot6.github.io/WITBT/wiki1a.txt', 'https://aliteralrobot6.github.io/WITBT/wiki1b.txt', 'https://aliteralrobot6.github.io/WITBT/wiki1c.txt'];
+export let article = docs[Math.floor(Math.random()) * docs.length]; //Picks a random Wiki file.
 // Making a preview of the article.
-async function preview() {
+export async function preview() {
     const response = await fetch(article, {mode: 'no-cors'});
     const data = await response.text();
     const titles = data.split('\n'); // Splits lines.
@@ -14,7 +13,7 @@ async function preview() {
 }
 
 // Upvoting and downvoting.
-function upvote() {
+export function upvote() {
     preview();
     if (!scores.hasOwnProperty(wiki)) {
         scores[wiki] = 1;
@@ -24,7 +23,7 @@ function upvote() {
     console.log(scores);
 };
 
-function downvote() {
+export function downvote() {
     preview();
     if (!scores.hasOwnProperty(wiki)) {
         scores[wiki] = -1;
@@ -33,3 +32,7 @@ function downvote() {
     }
     console.log(scores);
 };
+
+//Importing all the variables and functions.
+import {scores, wiki, docs, article, preview, upvote, downvote} from './code.js';
+preview();
