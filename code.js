@@ -22,7 +22,8 @@ function upvote() {
         scores[wiki] = scores[wiki] + 1;
     }
     console.log(scores);
-    let jsonscores = JSON.stringify(scores);
+    let url = '';
+    };
 }
 
 function downvote() {
@@ -33,5 +34,4 @@ function downvote() {
         scores[wiki] = scores[wiki] - 1;
     }
     console.log(scores);
-    let jsonscores = JSON.stringify(scores);
 }
