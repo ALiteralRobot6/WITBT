@@ -34,5 +34,5 @@ export function downvote() {
 };
 
 //Importing all the variables and functions.
-import {scores, wiki, docs, article, preview, upvote, downvote} from './code.js';
+import {wiki, docs, article, preview, upvote, downvote} from './code.js';
 preview();
