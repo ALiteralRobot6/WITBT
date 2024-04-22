@@ -1,5 +1,4 @@
 export var express = require('express');
-export var app = express();
 
 import {express, app} from './interpreter.js';
 
