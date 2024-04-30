@@ -1,6 +1,6 @@
 let scores = {};
 let wiki = '';
-let docs = ['client/wiki1a.txt', client/wiki1b.txt', 'client/wiki1c.txt'];
+let docs = ['client/wiki1a.txt', 'client/wiki1b.txt', 'client/wiki1c.txt'];
 let article = docs[Math.floor(Math.random()) * docs.length]; //Picks a random Wiki file.
 
 // Making a preview of the article.
