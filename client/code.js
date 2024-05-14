@@ -12,7 +12,6 @@ function preview() {
     wiki = titles[Math.floor(Math.random() * titles.length)]; // Picks a random Wiki title.
     console.log(wiki);
     document.getElementById('wikiPage').src = "https://en.wikipedia.org/wiki/" + wiki;
-    document.getElementById('articleName').innerHTML = wiki;
 }
 
 // Upvoting and downvoting.
