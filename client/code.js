@@ -16,7 +16,7 @@ function preview() {
 }
 
 // Upvoting and downvoting.
-function upvote() {
+async function upvote() {
     if (!scores.hasOwnProperty(wiki)) {
         scores[wiki] = 1;
     } else {
@@ -27,7 +27,7 @@ function upvote() {
     preview();
 }
 
-function downvote() {
+async function downvote() {
     if (!scores.hasOwnProperty(wiki)) {
         scores[wiki] = -1;
     } else {
