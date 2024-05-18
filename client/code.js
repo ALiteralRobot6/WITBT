@@ -6,7 +6,7 @@ let article = docs[Math.floor(Math.random()) * docs.length]; //Picks a random Wi
 preview()
 
 // Making a preview of the article.
-function preview() {
+async function preview() {
     const response = await fetch(article, {mode: 'no-cors'});
     const data = await response.text();
     const titles = data.split('\n'); // Splits lines.
