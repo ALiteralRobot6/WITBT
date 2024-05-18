@@ -22,8 +22,8 @@ async function upvote() {
     } else {
         scores[wiki] = scores[wiki] + 1;
     }
-    //const scoresDoc = JSON.stringify(scores);
-    //console.log(scoresDoc);
+    const scoresDoc = JSON.stringify(scores);
+    console.log(scoresDoc);
     preview();
 }
 
@@ -33,7 +33,7 @@ async function downvote() {
     } else {
         scores[wiki] = scores[wiki] - 1;
     }
-    //const scoresDoc = JSON.stringify(scores);
-    //console.log(scoresDoc);
+    const scoresDoc = JSON.stringify(scores);
+    console.log(scoresDoc);
     preview();
 }
