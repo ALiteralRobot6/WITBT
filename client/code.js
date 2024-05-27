@@ -5,7 +5,7 @@ preview()
 
 // Making a preview of the article.
 async function preview() {
-    let docs = ['wiki1a.txt', 'wiki1b.txt', 'wiki1c.txt', 'wiki2.txt', 'wiki3.txt', 'wiki4.txt', 'wiki5.txt', 'wiki6.txt', 'wiki7.txt', 'wiki8.txt', 'wiki9.txt', 'wiki10.txt', 'wiki11.txt', 'wiki12.txt', 'wiki13.txt', 'wiki14.txt', 'wiki15.txt', 'wiki16.txt', 'wiki17.txt', 'wiki18.txt', 'wiki19.txt', 'wiki20.txt', 'wiki20.txt', 'wiki21.txt', 'wiki22.txt', 'wiki23.txt', 'wiki24.txt'];
+    let docs = ['client/wiki1a.txt', 'client/wiki1b.txt', 'client/wiki1c.txt', 'client/wiki2.txt', 'client/wiki3.txt', 'client/wiki4.txt', 'client/wiki5.txt', 'client/wiki6.txt', 'client/wiki7.txt', 'client/wiki8.txt', 'client/wiki9.txt', 'client/wiki10.txt', 'client/wiki11.txt', 'client/wiki12.txt', 'client/wiki13.txt', 'client/wiki14.txt', 'client/wiki15.txt', 'client/wiki16.txt', 'client/wiki17.txt', 'client/wiki18.txt', 'client/wiki19.txt', 'client/wiki20.txt', 'client/wiki20.txt', 'client/wiki21.txt', 'client/wiki22.txt', 'client/wiki23.txt', 'client/wiki24.txt'];
     let article = docs[Math.floor(Math.random()) * docs.length]; //Picks a random Wiki file.
     console.log(article);
     const titles = article.split('\n'); // Splits lines.
