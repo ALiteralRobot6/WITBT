@@ -9,7 +9,7 @@ async function preview() {
     console.log(docs);
 
     // The following is for testing purposes.
-    const response = await fetch(https://aliteralrobot6.github.io/WITBT/client/testing.txt);
+    const response = await fetch("https://aliteralrobot6.github.io/WITBT/client/testing.txt");
     const text = await response.text();
     console.log(text);
 }
