@@ -15,10 +15,6 @@ async function preview() {
     // Picking a random Wiki file.
     let file = docs[Math.floor(Math.random() * docs.length)];
     console.log(file);
-
-    const response = await fetch('https://aliteralrobot6.github.io/WITBT/' + file);
-    const text = await response.text();
-    const lines = text.split('\n');    
 }
 
 // Upvoting and downvoting.
