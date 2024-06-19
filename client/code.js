@@ -14,6 +14,8 @@ async function preview() {
     var lines = text.split('\n');
     var randomWiki = lines[Math.floor(Math.random() * lines.length)];
     console.log(randomWiki);
+    var wikiPage = document.getElementById('wikiPage');
+    wikiPage.src = 'https://en.wikipedia.org/wiki/' + wikiFile;
 
     // Picking a random Wiki file.
     let file = docs[Math.floor(Math.random() * docs.length)];
