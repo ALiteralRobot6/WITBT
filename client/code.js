@@ -12,7 +12,7 @@ async function preview() {
     const response = await fetch("https://aliteralrobot6.github.io/WITBT/" + wikiFile);
     const text = await response.text();
     var lines = text.split('\n');
-    var randomWiki = lines[Math.floor(Math.random() * lines.length)];
+    randomWiki = lines[Math.floor(Math.random() * lines.length)];
     console.log(randomWiki);
     var wikiPage = document.getElementById('wikiPage');
     wikiPage.src = 'https://en.wikipedia.org/wiki/' + randomWiki;
