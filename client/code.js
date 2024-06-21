@@ -1,6 +1,7 @@
 let scores = {};
 let scoresDoc = '';
 let wiki = '';
+let randomWiki = '';
 preview()
 
 // Making a preview of the article.
