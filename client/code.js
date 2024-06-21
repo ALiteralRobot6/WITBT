@@ -24,10 +24,10 @@ async function preview() {
 
 // Upvoting and downvoting.
 async function upvote() {
-    if (!scores.hasOwnProperty(wiki)) {
-        scores[wiki] = 1;
+    if (!scores.hasOwnProperty(randomWiki)) {
+        scores[randomWiki] = 1;
     } else {
-        scores[wiki] = scores[wiki] + 1;
+        scores[randomWiki] = scores[randomWiki] + 1;
     }
     const scoresDoc = JSON.stringify(scores);
     console.log(scoresDoc);
@@ -35,10 +35,10 @@ async function upvote() {
 }
 
 async function downvote() {
-    if (!scores.hasOwnProperty(wiki)) {
-        scores[wiki] = -1;
+    if (!scores.hasOwnProperty(randomWiki)) {
+        scores[randomWiki] = -1;
     } else {
-        scores[wiki] = scores[wiki] - 1;
+        scores[randomWiki] = scores[randomWiki] - 1;
     }
     const scoresDoc = JSON.stringify(scores);
     console.log(scoresDoc);
