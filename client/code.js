@@ -14,7 +14,7 @@ async function preview() {
     const text = await response.text();
     var lines = text.split('\n');
     randomWiki = lines[Math.floor(Math.random() * lines.length)];
-    randomWiki = randomWiki - '\r'
+    randomWiki = randomWiki.replace('\r', '')
     console.log(randomWiki);
     var wikiPage = document.getElementById('wikiPage');
     wikiPage.src = 'https://en.wikipedia.org/wiki/' + randomWiki;
