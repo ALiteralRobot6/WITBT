@@ -19,11 +19,6 @@ async function preview() {
     console.log(randomWiki);
     wikiPage.src = 'https://en.wikipedia.org/wiki/' + randomWiki;
 
-    // Picking a random Wiki file.
-    let file = docs[Math.floor(Math.random() * docs.length)];
-    console.log(file);
-}
-
 // Upvoting and downvoting.
 async function upvote() {
     if (!scores.hasOwnProperty(randomWiki)) {
