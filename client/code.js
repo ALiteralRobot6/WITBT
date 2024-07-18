@@ -18,7 +18,8 @@ async function preview() {
     randomWiki = randomWiki.replace('\r', '')
     console.log(randomWiki);
     wikiPage.src = 'https://en.wikipedia.org/wiki/' + randomWiki;
-
+}
+    
 // Upvoting and downvoting.
 async function upvote() {
     if (!scores.hasOwnProperty(randomWiki)) {
