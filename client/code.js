@@ -2,7 +2,6 @@ let scores = {};
 let scoresDoc = '';
 let wiki = '';
 let randomWiki = '';
-preview()
 
 // Making a preview of the article.
 async function preview() {
@@ -42,3 +41,5 @@ async function downvote() {
     console.log(scoresDoc);
     preview();
 }
+
+preview()
